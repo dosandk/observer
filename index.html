@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container display-table parent-size">
+        <div class="left-side display-table-cell parent-half-width">
+            <form action="javascript:void(0)">
+                <div>
+                    <textarea id="publisher" class="text-box parent-size"></textarea>
+                </div>
+                <input id="reset" type="reset"/>
+            </form>
+        </div>
+        <div class="right-side display-table-cell parent-half-width">
+
+            <div>
+                <input name="module1" class="js-toggle-subscriber" type="checkbox" checked/>
+                <textarea id="subscriber-1" class="text-box parent-size"></textarea>
+            </div>
+            <div>
+                <input name="module2" class="js-toggle-subscriber" type="checkbox" checked/>
+                <textarea id="subscriber-2" class="text-box parent-size"></textarea>
+            </div>
+            <div>
+                <input name="module3" class="js-toggle-subscriber" type="checkbox" checked/>
+                <textarea id="subscriber-3" class="text-box parent-size"></textarea>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        publisher.initialize();
+    </script>
+</body>
+</html>
